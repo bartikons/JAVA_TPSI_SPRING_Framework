@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Pierwszy projekt springowy</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h1>Spring wita!</h1>
+        <h1>Cześć Anonim!</h1>
+        <h1>Cześć <span>Anonim</span>!</h1>
+        <h1>Cześć <span th:text="${imie}">Anonim</span>!</h1>
+        <p>
+            <span th:text="${imie}">Anonim</span> <span th:text="${nazwisko}">Anonimowe</span> twierdzi, że ma <span th:text="${wiek}">20</span> lat
+        </p>
+    </body>
+</html>
